@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0a0a1a">
+  <title>Doodle Jump</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HUD Bar -->
+  <div id="hud-bar">
+    <div class="hud-left">
+      <span class="hud-title">🦘 DOODLE JUMP</span>
+    </div>
+    <div class="hud-right">
+      <span class="hud-item lvl-icon">⚡ Lv.<span id="hud-level">1</span></span>
+      <span class="hud-item"><span class="coin-icon">🪙</span><span id="hud-coins">150</span></span>
+      <span class="hud-item"><span class="gem-icon">💎</span><span id="hud-gems">0</span></span>
+    </div>
+  </div>
+
+  <!-- Game Canvas -->
+  <canvas id="game-canvas"></canvas>
+
+  <!-- HUD Overlay -->
+  <div id="hud-overlay">
+    <div class="hud-stat">❤️ <span id="lives-display">1</span></div>
+    <div class="hud-stat" id="score-display">0</div>
+  </div>
+
+  <!-- Button Bar -->
+  <div id="button-bar">
+    <button class="game-btn btn-primary" id="restart-btn">▶ Play</button>
+    <button class="game-btn btn-shop" id="button-shop">🛒 Shop</button>
+  </div>
+
+  <!-- Game Over Overlay -->
+  <div id="game-over-overlay">
+    <div class="game-over-box">
+      <h2>Game Over</h2>
+      <div class="final-score" id="final-score">0</div>
+      <div class="stat-row">
+        <span>Height: <strong id="go-height">0</strong></span>
+        <span>Score: <strong id="go-score">0</strong></span>
+        <span>Combo: <strong id="go-combo">0</strong></span>
+      </div>
+      <div class="btn-group">
+        <button class="game-btn btn-primary" id="restart-btn2">▶ Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification -->
+  <div id="notification"></div>
+
+  <script src="progression.js"></script>
+  <script src="visuals.js"></script>
+  <script src="shop.js"></script>
+  <script src="ads-manager.js"></script>
+  <script src="challenges-system.js"></script>
+  <script src="store-rotator.js"></script>
+  <script src="retention-system.js"></script>
+  <script src="collectibles-system.js"></script>
+  <script src="tutorial-system.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
